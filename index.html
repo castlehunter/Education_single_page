@@ -12,6 +12,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -21,11 +29,11 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link cta" href="#">Try for free</a></li>
+          <li><a class="link main-nav-link" href="#">How it works</a></li>
+          <li><a class="link main-nav-link" href="#">Meals</a></li>
+          <li><a class="link main-nav-link" href="#">Testimonials</a></li>
+          <li><a class="link main-nav-link" href="#">Pricing</a></li>
+          <li><a class="link main-nav-link cta" href="#">Try for free</a></li>
         </ul>
       </nav>
 
@@ -144,7 +152,7 @@
       </div>
     </section>
 
-    <section class="main-section">
+    <section class="main-section section-meals">
       <div class="container">
         <span class="subheading">MEALS</span>
         <h2 class="heading-secondary">
@@ -152,33 +160,103 @@
         </h2>
       </div>
       <div class="meals-grid">
-        <div class="gyozas">
+        <div class="meal">
           <img src="img/meals/meal-1.jpg" alt="meal-1" />
-          <div class="meals-grid-content">
-            <div class="tags">
-              <span>VEGETERIAN</span>
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">Vegetarian</span>
             </div>
-            <p class="meals-grid-title">Japanese Gyozas</p>
-            <p>650 calories</p>
-            <p></p>
-            <p></p>
+            <p class="meal-title">Japanese Gyozas</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>650</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore &reg; <strong>74</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.9</strong> rating (537)</span>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="salad">
+        <div class="meal">
           <img src="img/meals/meal-2.jpg" alt="meal-2" />
-          <div class="tags">
-            <div>VEGETERIAN</div>
-            <div></div>
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegan">Vegan</span>
+              <span class="tag tag--paleo">Paleo</span>
+            </div>
+            <p class="meal-title">Avocado Salad</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span><strong>400</strong> calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon
+                  class="meal-icon"
+                  name="restaurant-outline"
+                ></ion-icon>
+                <span>NutriScore &reg; <strong>92</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4.8</strong> rating (441)</span>
+              </li>
+            </ul>
           </div>
-          <p>Japanese Gyozas</p>
-          <p>650 calories</p>
-          <p></p>
-          <p></p>
         </div>
-        <div class="diet">
-          Works with any diet: Vegetarian Vegan Pescatarian Gluten-free
-          Lactose-free Keto Paleo Low FODMAP Kid-friendly
+        <div class="diets">
+          <h3 class="heading-tertiary">Works with any diet:</h3>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Vegetarian</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Vegan</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Pescatarian</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Gluten-free</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Lactose-free</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Keto</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Paleo</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Low FODMAP</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Kid-friendly</span>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div>
+        <a class="link link-see-all-recipes" href="#">See all recipes →</a>
       </div>
     </section>
     <script src="script.js"></script>
